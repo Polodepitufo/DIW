@@ -1,0 +1,127 @@
+/*ESTILOS GENERALES*/
+/*Tono tierra oscuro: #694e4e;
+/*Tono tierra al o.2 rgb(105, 78, 78, 0.2);
+/*Tono tierra medio #C1A3A3
+/*Tono letra     color: rgb(41, 41, 41);
+*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+html{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: rgb(41, 41, 41);
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+h1{
+    font-size: 26px;
+    text-align: center;
+}
+h3{
+    font-size: 18px;
+}
+/*ELEMENTOS DEL TOP BAR*/
+.topBar{
+    width: 100%;
+    font-weight: 400;
+    font-size: 12px;
+}
+.topBar li{
+    justify-content: space-between;
+    display: block;
+    padding: 5px;
+
+}
+.topBar ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+    background-color:#694e4e;
+}
+.topBar a{
+    color: 	#FFF;
+    text-decoration: none;
+}
+/*ELEMENTOS DEL MENÚ PRINCIPAL*/
+.menu{
+    width: 100%;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.menu li{
+    justify-content: space-between;
+    display: block;
+    padding: 10px 10px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid#694e4e;
+}
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+
+    align-items: center;
+}
+.menu a{
+    text-decoration: none;
+    color: rgb(41, 41, 41);
+}
+.menu li:hover{
+    text-decoration: none;
+    background-color:rgb(	105, 78, 78, 0.2);
+}
+/*ESTILO TABLA*/
+table{
+    border-collapse: collapse; 
+    min-width: 500px; 
+    border: 1px solid #694e4e;
+    text-align: center;   
+}
+thead tr{
+    border:1px solid #694e4e;
+    background-color:#694e4e;
+    color:white;
+}
+td,th{
+    padding: 12px 15px;
+}
+
+tbody tr:nth-of-type(even) { 
+    background-color:#C1A3A3;
+    border-bottom: 1px solid #694e4e;
+    border-top: 1px solid #694e4e;
+} 
+/*ELEMENTOS BARRA LATERAL*/
+aside{
+    float: left;
+    width: 30%;
+}
+/*ELEMENTOS DEL MAIN*/
+main{
+    width: 70%;
+    float: right;
+    min-height: 500px;
+}
+/*FOOTER*/
+footer{
+    width: 100%;
+    font-weight: 400;
+    font-size: 12px;
+    clear: both;
+    background-color:#694e4e;
+    color:#FFF;
+    text-align: right;
+}
+footer p{
+    display: block;
+    padding: 5px;
+}
