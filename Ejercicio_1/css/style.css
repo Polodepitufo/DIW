@@ -10,7 +10,6 @@ html{
     font-size: 14px;
     color: rgb(41, 41, 41);
 }
-
 ul{
     padding: 0;
     margin: 0;
@@ -22,6 +21,23 @@ h1{
 }
 h3{
     font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+p{
+    margin: 0;
+}
+body{
+margin: 0 auto;
+}
+.contenedor{
+    width: 90%;
+    margin: 0 auto;    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    align-items: flex-start;
 }
 /*ELEMENTOS DEL TOP BAR*/
 .topBar{
@@ -48,14 +64,18 @@ h3{
     color: 	#FFF;
     text-decoration: none;
 }
+/*ELEMENTOS DEL NAV PRINCIPAL*/
+.logo{
+    text-align: center;
+    margin: 0 auto;
+}
 /*ELEMENTOS DEL MENÚ PRINCIPAL*/
 .menu{
     width: 100%;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 .menu li{
-    justify-content: space-between;
     display: block;
     padding: 10px 10px;
     margin: 0 auto;
@@ -65,10 +85,10 @@ h3{
 }
 .menu ul{
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
     flex-wrap: nowrap;
     align-content: center;
-
     align-items: center;
 }
 .menu a{
@@ -80,11 +100,14 @@ h3{
     background-color:rgb(	105, 78, 78, 0.2);
 }
 /*ESTILO TABLA*/
+.tabla{
+    overflow-x:auto;
+}
 table{
     border-collapse: collapse; 
     min-width: 500px; 
     border: 1px solid #694e4e;
-    text-align: center;   
+    text-align: left;   
 }
 thead tr{
     border:1px solid #694e4e;
@@ -92,7 +115,7 @@ thead tr{
     color:white;
 }
 td,th{
-    padding: 12px 15px;
+    padding: 10px 15px;
 }
 
 tbody tr:nth-of-type(even) { 
@@ -100,23 +123,60 @@ tbody tr:nth-of-type(even) {
     border-bottom: 1px solid #694e4e;
     border-top: 1px solid #694e4e;
 } 
+tbody a{
+    text-decoration: none;
+}
+tbody a:hover{
+    filter: grayscale(100%);
+}
 /*ELEMENTOS BARRA LATERAL*/
 aside{
-    float: left;
-    width: 30%;
+    width: 15%;
+    min-width: fit-content;
+    background-color: rgb(105, 78, 78, 0.2);
+    padding: 15px;
+    line-height: 3;
+    display: block;
+    margin: 20px 0px;
+}
+aside ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+aside a{
+    text-decoration: none;
+    color: rgb(41, 41, 41);
+    padding: 0 5px;
+}
+aside li{
+    width: 100%;
+    border-left: 1px solid#694e4e;
+}
+aside li:hover{
+    text-decoration: none;
+    background-color:rgb(	105, 78, 78, 0.2);
+}
+aside li::marker{
+margin: 0 !important;
 }
 /*ELEMENTOS DEL MAIN*/
 main{
     width: 70%;
-    float: right;
-    min-height: 500px;
+}
+.negrita{
+    font-weight: bold;
+}
+section{
+    margin: 20px 0px;
 }
 /*FOOTER*/
 footer{
     width: 100%;
     font-weight: 400;
     font-size: 12px;
-    clear: both;
     background-color:#694e4e;
     color:#FFF;
     text-align: right;
@@ -125,3 +185,12 @@ footer p{
     display: block;
     padding: 5px;
 }
+/*ADAPTACIÓN*/
+@media (max-width:780px) {
+aside{
+    display: none;
+}
+main{
+    width: 100%;
+}
+  }
