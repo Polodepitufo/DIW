@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="favicon" href="images/favicon.ico" sizes="16x16">
-  <title>Clínica Snow - Listado de pacientes </title>
+  <title>Clínica Snow - Editar paciente </title>
 </head>
 
 <body>
@@ -15,7 +15,7 @@
       <li><a href="#">Email: clinicasnow@gmail.com</a></li>
     </ul>
     <nav class="logo">
-      <img width="300px" src="images/logotipo-horizontal.PNG">
+      <a href='index.html'><img width="300px" src="images/logotipo-horizontal.PNG"></a>
     </nav>
   </nav>
   <nav class="menu">
@@ -24,7 +24,7 @@
       <li><a href="#">Medicina estética</a></li>
       <li><a href="#">Cirugía estética</a></li>
       <li><a href="#">Dermatología</a></li>
-      <li><a href="#">Capilar</a></li>
+      <li><a href="acceso.html">Acceso</a></li>
     </ul>
   </nav>
 
@@ -51,7 +51,27 @@
         </ul>
       </nav>
     </aside>
-    <main>
+    <main class="mainConAside">
+      <section>
+        <h3>Editar paciente seleccionado</h3>
+        <form class="datosListados">
+          <p>
+          <label> Nombre</label>
+          <input type='text' value="" name="nombre" placeholder="Nombre">
+        </p>
+        <p>
+          <label> Primer apellido</label>
+          <input type='text' value="" name="primerApellido" placeholder="Primer apellido ">
+        </p>
+        <p>
+          <label> Segundo apellido</label>
+          <input type='text' value="" name="segundoApellido" placeholder="Segundo apellido">
+        </p>
+        <p>
+          <input type='submit' value="Modificar" class="boton" name="nombre">
+        </p>
+        </form>
+      </section>
       <section>
         <h3>What is Lorem Ipsum?</h3>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the

@@ -1,81 +1,98 @@
-/*ESTILOS GENERALES*/
 /*Tono tierra oscuro: #694e4e;
 /*Tono tierra al o.2 rgb(105, 78, 78, 0.2);
 /*Tono tierra medio #C1A3A3
 /*Tono letra     color: rgb(41, 41, 41);
 */
+
+/*ESTILOS GENERALES*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-html{
+
+html,
+input {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     color: rgb(41, 41, 41);
 }
-ul{
+
+ul {
     padding: 0;
     margin: 0;
     list-style: none;
 }
-h1{
+
+h1 {
     font-size: 26px;
     text-align: center;
 }
-h3{
+
+h3 {
     font-size: 18px;
     margin-top: 0;
     margin-bottom: 10px;
 }
-p{
+
+p {
     margin: 0;
 }
-body{
-margin: 0 auto;
+
+body {
+    margin: 0 auto;
 }
-.contenedor{
+
+.contenedor {
     width: 90%;
-    margin: 0 auto;    display: flex;
+    margin: 0 auto;
+    display: flex;
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: nowrap;
     align-content: flex-start;
     align-items: flex-start;
 }
-/*ELEMENTOS DEL TOP BAR*/
-.topBar{
+
+/*TOP BAR*/
+.topBar {
     width: 100%;
     font-weight: 400;
     font-size: 12px;
 }
-.topBar li{
+
+.topBar li {
     justify-content: space-between;
     display: block;
     padding: 5px;
 
 }
-.topBar ul{
+
+.topBar ul {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-content: center;
     justify-content: flex-end;
     align-items: center;
-    background-color:#694e4e;
+    background-color: #694e4e;
 }
-.topBar a{
-    color: 	#FFF;
+
+.topBar a {
+    color: #FFF;
     text-decoration: none;
 }
-/*ELEMENTOS DEL NAV PRINCIPAL*/
-.logo{
+
+/*LOGO PRINCIPAL*/
+.logo {
     text-align: center;
     margin: 0 auto;
 }
-/*ELEMENTOS DEL MENÚ PRINCIPAL*/
-.menu{
+
+/*MENÚ PRINCIPAL*/
+.menu {
     width: 100%;
     font-weight: 600;
     margin-bottom: 0px;
 }
-.menu li{
+
+.menu li {
     display: block;
     padding: 10px 10px;
     margin: 0 auto;
@@ -83,7 +100,8 @@ margin: 0 auto;
     text-align: center;
     border-bottom: 1px solid#694e4e;
 }
-.menu ul{
+
+.menu ul {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -91,46 +109,56 @@ margin: 0 auto;
     align-content: center;
     align-items: center;
 }
-.menu a{
+
+.menu a {
     text-decoration: none;
     color: rgb(41, 41, 41);
 }
-.menu li:hover{
+
+.menu li:hover {
     text-decoration: none;
-    background-color:rgb(	105, 78, 78, 0.2);
+    background-color: rgb(105, 78, 78, 0.2);
 }
+
 /*ESTILO TABLA*/
-.tabla{
-    overflow-x:auto;
+.tabla {
+    overflow-x: auto;
 }
-table{
-    border-collapse: collapse; 
-    min-width: 500px; 
+
+table {
+    border-collapse: collapse;
+    min-width: 500px;
     border: 1px solid #694e4e;
-    text-align: left;   
+    text-align: left;
 }
-thead tr{
-    border:1px solid #694e4e;
-    background-color:#694e4e;
-    color:white;
+
+thead tr {
+    border: 1px solid #694e4e;
+    background-color: #694e4e;
+    color: white;
 }
-td,th{
+
+td,
+th {
     padding: 10px 15px;
 }
 
-tbody tr:nth-of-type(even) { 
-    background-color:#C1A3A3;
+tbody tr:nth-of-type(even) {
+    background-color: #C1A3A3;
     border-bottom: 1px solid #694e4e;
     border-top: 1px solid #694e4e;
-} 
-tbody a{
+}
+
+tbody a {
     text-decoration: none;
 }
-tbody a:hover{
+
+tbody a:hover {
     filter: grayscale(100%);
 }
-/*ELEMENTOS BARRA LATERAL*/
-aside{
+
+/*BARRA LATERAL*/
+aside {
     width: 15%;
     min-width: fit-content;
     background-color: rgb(105, 78, 78, 0.2);
@@ -139,58 +167,145 @@ aside{
     display: block;
     margin: 20px 0px;
 }
-aside ul{
+
+aside ul {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: flex-start;
     justify-content: space-between;
 }
-aside a{
+
+aside a {
     text-decoration: none;
     color: rgb(41, 41, 41);
     padding: 0 5px;
 }
-aside li{
+
+aside li {
     width: 100%;
     border-left: 1px solid#694e4e;
 }
-aside li:hover{
+
+aside li:hover {
     text-decoration: none;
-    background-color:rgb(	105, 78, 78, 0.2);
+    background-color: rgb(105, 78, 78, 0.2);
 }
-aside li::marker{
-margin: 0 !important;
+
+aside li::marker {
+    margin: 0 !important;
 }
+
 /*ELEMENTOS DEL MAIN*/
-main{
+.mainConAside {
     width: 70%;
 }
-.negrita{
+
+.negrita {
     font-weight: bold;
 }
-section{
+
+section {
     margin: 20px 0px;
 }
+
 /*FOOTER*/
-footer{
+footer {
     width: 100%;
     font-weight: 400;
     font-size: 12px;
-    background-color:#694e4e;
-    color:#FFF;
+    background-color: #694e4e;
+    color: #FFF;
     text-align: right;
 }
-footer p{
+
+footer p {
     display: block;
     padding: 5px;
 }
-/*ADAPTACIÓN*/
-@media (max-width:780px) {
-aside{
-    display: none;
+
+/*FORMULARIO DE LISTADOS*/
+.datosListados {
+    line-height: 3;
+    width: fit-content;
 }
-main{
+
+.datosListados p {
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.datosListados input {
+    margin-left: 10px;
+    border: 1px solid#694e4e;
+    padding: 5px;
+}
+
+.datosListados label {
+    border-right: 1px solid#694e4e;
+    padding-right: 10px;
+}
+
+/*BOTONES*/
+.boton {
+    border: 1px solid#694e4e;
+    background-color: rgb(105, 78, 78, 0.2);
+    padding: 5px;
+    margin: 5px 0px;
+}
+
+.boton:hover {
+    background-color: #FFF;
+}
+
+/*BLOQUES CATEGORIAS HOME*/
+.bloquesCategorias {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.fondoBlanco {
+    background-color: white;
+    padding: 5px;
+}
+
+.bloquesCentrados {
+    text-align: center;
+    background-image: url(https://www.materialestetica.com/blog/wp-content/uploads/2020/05/Mobiliario-para-cl%C3%ADnica-est%C3%A9tica-%C2%BFC%C3%B3mo-escogerlo.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10% 0;
+}
+
+.bloquesDobleTexto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: space-between;
     width: 100%;
 }
-  }
+
+.bloquesDobleTexto p {
+    margin-right: 10px;
+    text-align: justify;
+}
+
+/*ADAPTACIÓN*/
+@media (max-width:780px) {
+    aside {
+        display: none;
+    }
+
+    main {
+        width: 100%;
+    }
+}
