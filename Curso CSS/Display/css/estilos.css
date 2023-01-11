@@ -25,7 +25,7 @@ div.inline p {
 }
 p {
   border: 1px solid black;
-  height: 100px;
+  height: 40px;
 }
 
 p:nth-of-type(1) {
