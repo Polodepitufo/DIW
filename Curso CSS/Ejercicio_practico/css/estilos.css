@@ -1,0 +1,101 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+background-color: antiquewhite;
+}
+
+.container {
+background-color: lightgreen;
+height: 600px;
+width: 80%;
+border-radius: 10px;
+margin: 100px auto;
+position: relative
+}
+
+.container nav {
+  background-color: #555555;
+  position: -webkit-sticky;
+  position: sticky;
+  top:0px;
+  z-index: 100;
+}
+
+.container nav div {
+display: inline-block;
+color: white;
+padding: 20px;
+width: 20%;
+}
+
+figure {
+  background-color: white;
+  width: 20%;
+  padding: 5px 10px;
+  border: 2px solid black;
+  text-align: center;
+  border-radius: 10px;
+  
+}
+
+figure img {
+  width: 80%;
+}
+
+#li1 {
+  position: absolute;
+  left: 20%;
+  top: 25%;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  z-index: 10;
+}
+
+#li2 {
+  position: absolute;
+  left: 30%;
+  top: 30%;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  z-index: 8;
+}
+
+#li3 {
+  position: absolute;
+  left: 40%;
+  top: 35%;
+  -webkit-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+  z-index: 6;
+}
+
+#li4 {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  -webkit-transform: rotate(15deg);
+  transform: rotate(15deg);
+  z-index: 4;
+}
+
+.fixed-sidebar {
+position: fixed;
+height: 40%;
+text-align: center;
+top: 30%;
+width: 80px;
+border: 2px solid black;
+
+}
+
+.fixed-sidebar ul {
+list-style:none;
+padding-left: 5px;
+}
+
+.fixed-sidebar img {
+width: 90%;
+}
